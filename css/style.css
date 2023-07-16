@@ -1,0 +1,46 @@
+body{
+    direction: rtl;
+}
+
+header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#logo img{
+    height: 60px;
+    width: auto;
+}
+
+.menu li{
+    display: inline;
+    padding: 10px;
+}
+
+.blog{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.blog .box{
+    background-color: rgb(212, 212, 212);
+    border-radius: 10px;
+    padding: 0px 20px;
+    margin: 20px;
+    width: 35%;
+}
+
+@media only screen and (max-width: 400px) {
+    #logo img{
+        height: 30px;
+        width: auto;
+    }
+}
+
+@media print {
+    #logo img{
+        display: none;
+    }
+} 
