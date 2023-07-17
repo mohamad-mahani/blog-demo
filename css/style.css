@@ -13,7 +13,7 @@ header{
     width: auto;
 }
 
-.menu li{
+.menu li , .sponsers-items li{
     display: inline;
     padding: 10px;
 }
@@ -32,6 +32,10 @@ header{
     width: 35%;
 }
 
+.sponsers-items li img{
+    height: 60px;
+    width: auto;
+}
 @media only screen and (max-width: 400px) {
     #logo img{
         height: 30px;
