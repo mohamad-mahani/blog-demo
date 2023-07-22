@@ -77,12 +77,14 @@
         <section class="contact-form">
             <div class="form-title"><h2>تماس باما</h2></div>
             <form action="">
-                <div>
+                <div class="form-box">
+                <div class="form-item">
                     <label for="fname">نام</label>
                     <input type="text" id="name" name="firstname" placeholder="">
                     <label for="ffamily">نام خانوادگی</label>
                     <input type="text" id="famil" name="lastname" placeholder="">
-
+                </div>
+                 <div class="form-item">
                     <label for="city">شهر</label>
                     <select name="city" id="city">
                         <option value="1">کرمان</option>
@@ -91,13 +93,15 @@
                         <option value="4">گرگان</option>
                         <option value="5">یاسوج</option>
                     </select>
-
+                    </div>
+                    <div class="form-item">
                     <label for="long-tect">متن پیام</label>
                     <textarea name="message" id="message" placeholder="متن پیام" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-item">
                     <input type="submit" value="ارسال">
+                    </div>
                 </div>
-
-
             </form>
         </section>
     </main>

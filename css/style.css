@@ -1,11 +1,18 @@
 body{
     direction: rtl;
+    padding: 0;
+    margin: 0;
 }
 
 header{
+    position: fixed;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 10px;
+    top: 0;
 }
 
 #logo img{
@@ -13,12 +20,23 @@ header{
     width: auto;
 }
 
-.menu li , .sponsers-items li{
+.menu li {
     display: inline;
     padding: 10px;
 }
 
-.blog{
+.sponsers-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.blog{   
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -36,6 +54,66 @@ header{
     height: 60px;
     width: auto;
 }
+
+.para-title h2{
+    position: relative;
+    margin-right: 15px;
+}
+
+.para-title h2::before{
+    position:absolute;
+    content: ".";
+    margin-left: 10px;
+    font-size: 50px;
+    top: -26px;
+    right:-17px ;
+}
+
+.about-text p{
+ text-align: justify;
+
+}
+
+.sponser-image{
+    display: inline;
+}
+
+.contact-form , .about-us{
+    background-color: rgb(212, 212, 212);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.contact-form .form-box{
+    width: fit-content;
+    margin: auto;
+}
+
+.contact-form form .form-item{
+    text-align: right;
+    padding: 10px 0;
+}
+
+.contact-form .form-item:last-child{
+    text-align: left;
+}
+.contact-form .form-item:nth-child(2) select{
+    width: 90%;
+}
+
+.contact-form .form-item input[type="submit"]{
+    width: 100px;
+}
+
+footer{
+    direction: ltr;
+    text-align: left;
+    margin: 20px 60px ;
+    
+}
+
 @media only screen and (max-width: 400px) {
     #logo img{
         height: 30px;
