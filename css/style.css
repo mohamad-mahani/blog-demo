@@ -1,9 +1,9 @@
-body{
+/* body{
     direction: rtl;
     padding: 0;
     margin: 0;
 }
-
+*/
 header{
     position: fixed;
     display: flex;
@@ -13,6 +13,7 @@ header{
     background: white;
     box-shadow: 0 0 10px;
     top: 0;
+    z-index: 999;
 }
 
 #logo img{
@@ -24,18 +25,18 @@ header{
     display: inline;
     padding: 10px;
 }
-
+/*
 .sponsers-items{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
+*/
 main{
     margin-top: 100px;
 }
-
+/*
 .blog{   
     display: flex;
     flex-direction: row;
@@ -46,8 +47,6 @@ main{
     background-color: rgb(212, 212, 212);
     border-radius: 10px;
     padding: 0px 20px;
-    margin: 20px;
-    width: 35%;
 }
 
 .sponsers-items li img{
@@ -125,4 +124,4 @@ footer{
     #logo img{
         display: none;
     }
-} 
+}  */
