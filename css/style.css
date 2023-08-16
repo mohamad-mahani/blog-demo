@@ -5,15 +5,14 @@
 }
 */
 header{
-    position: fixed;
-    display: flex;
+    direction: initial;
+    position: fixed;  
     flex-direction: row-reverse;
     justify-content: space-between;
     width: 100%;
-    background: white;
     box-shadow: 0 0 10px;
     top: 0;
-    z-index: 999;
+    z-index: 10;
 }
 
 #logo img{
@@ -21,10 +20,6 @@ header{
     width: auto;
 }
 
-.menu li {
-    display: inline;
-    padding: 10px;
-}
 /*
 .sponsers-items{
     display: flex;
@@ -36,6 +31,67 @@ header{
 main{
     margin-top: 100px;
 }
+
+.para-title h2{
+    position: relative;
+    margin-right: 17px;
+}
+
+.news h2{
+    position: relative;
+    margin-right: 17px;
+}
+
+.notices h2{
+    position: relative;
+    margin-right: 17px;
+}
+
+.para-title  h2::before{
+    position:absolute;
+    content: ".";
+    margin-left: 10px;
+    font-size: 50px;
+    top: -26px;
+    right:-17px ;
+}
+
+.news  h2::before{
+    position:absolute;
+    content: ".";
+    margin-left: 10px;
+    font-size: 50px;
+    top: -26px;
+    right:-17px ;
+}
+
+.notices  h2::before{
+    position:absolute;
+    content: ".";
+    margin-left: 10px;
+    font-size: 50px;
+    top: -26px;
+    right:-17px ;
+}
+
+.about-text p{
+text-align: justify;
+}
+
+.form-title h2{
+    position: relative;
+    margin-right: 15px;
+}
+
+.form-title h2::before{
+    position: absolute;
+    content: ".";
+    font-size: 50px;
+    margin-left: 10px;
+    right: -17px;
+    top: -26px;
+}
+
 /*
 .blog{   
     display: flex;
@@ -54,19 +110,9 @@ main{
     width: auto;
 }
 
-.para-title h2{
-    position: relative;
-    margin-right: 15px;
-}
 
-.para-title h2::before{
-    position:absolute;
-    content: ".";
-    margin-left: 10px;
-    font-size: 50px;
-    top: -26px;
-    right:-17px ;
-}
+
+
 
 .about-text p{
  text-align: justify;

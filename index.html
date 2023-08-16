@@ -8,47 +8,110 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-PJsj/BTMqILvmcej7ulplguok8ag4xFTPryRq8xevL7eBYSmpXKcbNVuy+P0RMgq" crossorigin="anonymous">
+ 
 </head>
 <body>
     <header>
-        <div id="logo">
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Third navbar example">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" id="logo" >
+                <img src="img/Logo.png" alt="logo place">
+            </a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="navbar-collapse collapse" id="navbarsExample03" style="">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">خانه</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">درباره ما</a>
+                  </li>
+                  <li class="nav-item">
+                    <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+                    <a class="nav-link" >تماس با ما</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form role="search">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+            </div>
+          </nav>
+
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="">
+        <a class="navbar-brand" href="#" id="logo">
+            <img src="img/Logo.png" alt="logo place">
+        </a>
+        </div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls=" " aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#main">خانه</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">درباره ما</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">تماس با ما</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+
+        <!-- <div id="logo">
             <img src="img/logo.png" alt="logo place">
         </div>
         <nav>
             <ul class="menu">
-                <li><a href="#">خانه </a></li>
-                <li><a href="#">درباره ما</a></li>
-                <li><a href="#">تماس با ما</a></li>
+                <li><a href="#main">خانه </a></li>
+                <li><a href="#about">درباره ما</a></li>
+                <li><a href="#contact">تماس با ما</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main class="container px-4">
-        <!-- gx and gy is Gap bettwin cols -->
-        <section class="row gy-2 gx-2"> 
+        <!-- gx and gy is Gap between cols -->
+        <section class="row gy-2 gx-2" id="main"> 
             <div class="col-12 col-sm-6">
-                <div class="border bg-light rounded-4">
-                <div class="m-2"><h2>اخبار</h2></div>
-                <ul class="box-items">
+                <div class="border bg-light rounded-4 px-2">
+                <div class="m-2 news" ><h2>اخبار</h2></div>
+                <ul class="box-items" id="news">
+                    <!-- <li>اخرین خبر 1</li>
                     <li>اخرین خبر 1</li>
                     <li>اخرین خبر 1</li>
-                    <li>اخرین خبر 1</li>
-                    <li>اخرین خبر 1</li>
+                    <li>اخرین خبر 1</li> -->
                 </ul>
             </div>
             </div>
             <div class="box col-12 col-sm-6">
-                <div class="border bg-light rounded-4">
-                    <div class="m-2"><h2>اطلاعیه ها</h2></div>
-                    <ul class="box-items">
+                <div class="border bg-light rounded-4 px-2">
+                    <div class="m-2 notices"><h2>اطلاعیه ها</h2></div>
+                    <ul class="box-items" id="notices">
+                        <!-- <li>اخرین اطلاعیه 1</li>
                         <li>اخرین اطلاعیه 1</li>
                         <li>اخرین اطلاعیه 1</li>
-                        <li>اخرین اطلاعیه 1</li>
-                        <li>اخرین اطلاعیه 1</li>
+                        <li>اخرین اطلاعیه 1</li> -->
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="about-us my-5"> 
+        <section class="about-us my-5  border bg-light rounded-4 px-4 py-3" id="about"> 
             <div class="para-title"><h2>درباره ما</h2></div>
             <div class="about-text"> 
                 <p>
@@ -61,39 +124,41 @@
         </section>
         <section class="sponsers">
             <ul class="sponsers-items row">
-                <li class="sponser-image col">
-                    <img src="img/aon.png" alt="sponser1">
+                <li class="sponser-image col-12 col-sm-6 col-md-4 col-lg-2 d-block">
+                    <img class="w-100" src="img/aon.png" alt="sponser1">
                 </li>
-                <li class="sponser-image col">
-                    <img src="img/vw.png" alt="sponser2">
+                <li class="sponser-image col-12 col-sm-6 col-md-4 col-lg-2 d-block">
+                    <img class="w-100" src="img/vw.png" alt="sponser2">
                 </li>
-                <li class="sponser-image col">
-                    <img src="img/adidas.png" alt="sponser3">
+                <li class="sponser-image col-12 col-sm-6 col-md-4 col-lg-2 d-block">
+                    <img  class="w-100" src="img/tweeter.png" alt="sponser3">
                 </li>
-                <li class="sponser-image col">
-                    <img src="img/at&t.png" alt="sponser4">
+                <li class="sponser-image col-12 col-sm-6 col-md-4 col-lg-2 d-block">
+                    <img  class="w-100" src="img/at&t.png" alt="sponser4">
                 </li>
-                <li class="sponser-image col">
-                    <img src="img/tweeter.png" alt="sponser5">
+                <li class="sponser-image col-12 col-sm-6 col-md-4 col-lg-2 d-block">
+                    <img  class="w-100" src="img/adidas.png" alt="sponser5">
                 </li>
-                <li class="sponser-image col">
-                    <img src="img/coke.png" alt="sponser6">
+                <li class="sponser-image col-12 col-sm-6 col-md-4 col-lg-2 d-block">
+                    <img  class="w-100" src="img/coke.png" alt="sponser6">
                 </li>
             </ul>
         </section>
-        <section class="contact-form">
+        <section class="contact-form  border bg-light rounded-4 px-4 py-3" id="contact">
             <div class="form-title"><h2>تماس باما</h2></div>
             <form action="">
-                <div class="form-box">
-                <div class="form-item">
+                <div class="form-box ">
+                <div class="form-item  form-group my-2">
                     <label for="fname">نام</label>
-                    <input type="text" id="name" name="firstname" placeholder="">
-                    <label for="ffamily">نام خانوادگی</label>
-                    <input type="text" id="famil" name="lastname" placeholder="">
+                    <input type="text" class="form-control my-2" id="name" name="firstname" placeholder="">
                 </div>
-                 <div class="form-item">
+                <div class="form-item  form-group my-2">
+                    <label for="ffamily">نام خانوادگی</label>
+                    <input type="text" class="form-control my-2" id="famil" name="lastname" placeholder="">
+                </div>
+                 <div class="form-item  form-group my-2">
                     <label for="city">شهر</label>
-                    <select name="city" id="city">
+                    <select name="city" id="city" class="form-control my-2">
                         <option value="1">کرمان</option>
                         <option value="2">اصفهان</option>
                         <option value="3">یزد</option>
@@ -101,12 +166,12 @@
                         <option value="5">یاسوج</option>
                     </select>
                     </div>
-                    <div class="form-item">
+                    <div class="form-item  form-group my-2">
                     <label for="long-tect">متن پیام</label>
-                    <textarea name="message" id="message" placeholder="متن پیام" cols="30" rows="10"></textarea>
+                    <textarea name="message" class="form-control my-2"  id="message" placeholder="متن پیام" cols="30" rows="10"></textarea>
                     </div>
-                    <div class="form-item">
-                    <input type="submit" value="ارسال">
+                    <div class="form-item  form-group text-end my-3">
+                    <input type="submit" class="btn btn-primary w-50  " value="ارسال">
                     </div>
                 </div>
             </form>
@@ -116,5 +181,8 @@
         <div>@copyright mohamad mahani 2023</div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>
